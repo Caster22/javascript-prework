@@ -29,3 +29,34 @@ if(playerInput == '1'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+if (computerMove == 'kamień' && playerMove == 'kamień'){
+    printMessage('REMIS!, odśwież i zagraj ponownie!');
+
+}else if (computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Wygrałeś!, odśwież i zagraj ponownie!');
+
+}else if (computerMove == 'kamień' && playerMove == 'nożyce'){
+    printMessage('Przegrałeś, odśwież i zagraj ponownie!');
+
+}else if (computerMove == 'papier' && playerMove == 'kamień'){
+    printMessage('Przegrałeś, odśwież i zagraj ponownie!');
+
+}else if (computerMove == 'papier' && playerMove == 'papier'){
+    printMessage('REMIS!, odśwież i zagraj ponownie!');
+
+}else if (computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Wygrałeś!, odśwież i zagraj ponownie!');
+
+}else if (computerMove == 'nożyce' && playerMove == 'kamień'){
+    printMessage('Wygrałeś, odśwież i zagraj ponownie!');
+
+}else if (computerMove == 'nożyce' && playerMove == 'papier'){
+    printMessage('Przegrałeś!, odśwież i zagraj ponownie!');
+
+}else if (computerMove == 'nożyce' && playerMove == 'nożyce'){
+    printMessage('REMIS!, odśwież i zagraj ponownie!');
+
+}else{
+    printMessage('Odśwież i zagraj ponownie podając poprawny ruch!');
+}
