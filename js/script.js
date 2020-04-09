@@ -64,6 +64,7 @@
 
     }
 
+
     document.getElementById('button-rock').addEventListener('click', function () {
         playGame(1);
     });
